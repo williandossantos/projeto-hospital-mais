@@ -1,0 +1,523 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: tahoma, sans-serif;
+}
+body{background-color:#d5d9e3;}
+
+/********CABEÇALHO WRAP**********/
+header{
+    background-color: #ecf0fb;
+}
+.cabecalho-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabecalho-wrap > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: rgb(4, 83, 255);
+}
+.cabecalho-wrap > a img{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(71, 172, 255));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cabecalho-wrap > .navbar{
+    display: flex;
+    gap: 15px;
+}
+.cabecalho-wrap > .navbar a{
+    display: block;
+    color:#898b91;
+}
+.cabecalho-wrap > .navbar .ativo{
+    color: rgb(4, 83, 255);
+    border-bottom: 2px solid rgb(4, 83, 255);
+    font-weight: bold;
+}
+
+.cabecalho-wrap > .sign-in button{
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(71, 172, 255));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/*********SECAO-CHAMADA***********/
+
+.chamada-container{
+    display: flex;
+    gap: 10px;
+}
+.titulo-chamada{
+    width: 100%;
+    padding-top: 4%;
+}
+.titulo-chamada > div{
+    max-width: 400px;
+    padding-left: 4%;
+}
+.titulo-chamada > div h2{
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #545658;
+}
+.titulo-chamada > div p{color: #898b91;}
+.titulo-chamada .link-video > .link-video-wrap{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(71, 172, 255));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: inline-block;
+    margin: 35px 10px 0 0;
+    text-align: center;
+}
+.link-video > .link-video-wrap img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.link-video > span{
+    color: rgb(4, 83, 255);
+    font-weight: bold;
+    display:inline-block;
+}
+.bg-chamada > div{background-color: #898b91;}
+.bg-chamada > div img{height: 520px;}
+
+/******APOINTMENT******/
+.appointment{
+    margin-top: -8em;
+    padding: 0 4%;
+    position: absolute;
+}
+.appointment-text{
+    margin-bottom: 2em;
+}
+.appointment .appointment-box{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #f1f1f1;
+}
+.appointment-box .box-wrap span{
+    padding-bottom: .5em;
+    display: block;
+    color: #898b91;
+}
+.appointment-box .box-wrap span img{
+    vertical-align: middle;
+    width: 10px;
+}
+.appointment-box .box-wrap p{
+    font-weight: bold;
+    color: #545658;  
+}
+
+/*******INFORMAÇÂO*******/
+
+.info{
+    padding:5% 4%;
+}
+.info-container{
+    display: flex;
+    gap: 10px;
+}
+.info-wrap{
+    padding: 4% 0;
+    background-color: #182238;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.info-wrap:hover{
+    color: #000;
+    transition: all .7s;
+    transform: scale(1.2);
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(71, 172, 255));
+}
+.info-wrap:hover h2{
+    color: #000;
+    transition: all .7s;
+}
+.info-img{
+    width: 60px;
+    height: 60px;
+    margin: 0 60px;
+}
+.info-img img{
+    width: 100%;
+    height: 100%;
+}
+.info-texto{
+    margin-top: 20px;
+    text-align: center;
+}
+.info-texto h2{
+    font-size: 1.4em;
+    color: #afafaf;
+    margin-bottom: 10px;
+}
+.info-texto p{
+    color: rgba(199, 210, 243, 0.63)
+}
+
+/*******ESPECIALIDADE*******/
+.especialidade{
+    padding:100px 2%;
+}
+.especialidade > h2{
+    padding: 20px 0;
+}
+.especialidade-container{
+    display: flex;
+    gap: 20px;
+}
+.especialidade-wrap{
+    padding: 20px 10px;
+    background-color: #182238;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.especialidade-wrap img{
+    max-width: 100%;
+}
+.especialidade-wrap p{
+    text-align: center;
+    color: #afafaf;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.btn-espec{text-align: right;}
+.btn-espec button{
+    padding: 10px 15px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(7, 108, 190));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+}
+
+/******VACINAÇÂO******/
+.vacinacao{
+    padding: 7% 2%;
+    background-color: #182238;
+}
+.vacina-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vacina-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 60px;
+    background-color: #2e2f3d;
+    border-radius: 50%;
+    text-align: center;
+}
+.vacina-img img{
+    width: 80%;
+    height: 80%;
+    margin-top: 9px;
+}
+.vacina-texto{
+    margin-top: 20px;
+    text-align: center;
+}
+.vacina-texto h2{
+    color: #afafaf;
+    margin-bottom: 10px;
+}
+.vacina-texto p{
+    color: rgba(199, 210, 243, 0.63);
+}
+.vacina-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.vacina-btn button{
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(7, 108, 190));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+}
+/*******SERVICOS********/
+.servicos{
+    padding: 4% 0;
+}
+.servicos-container{
+    padding: 0 4%;
+}
+.servicos-container .servicos-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 2%;
+}
+
+.servicos-container .servicos-wrap .servicos-img {
+    width: 50%;
+    padding: 5% 2%;
+}
+
+.servicos-container .servicos-wrap .servicos-img div{
+    position: relative;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(7, 108, 190));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width:380px;
+    height: 220px;
+    margin:40px auto 0 0;
+}   
+.servicos-container .servicos-wrap:last-child .servicos-img div{
+    margin:40px 0 0 auto;
+}
+.servicos-container .servicos-wrap:last-child .servicos-img div img{
+    left: -30px;
+    top: -30px;
+}
+.servicos-container .servicos-wrap img{
+    position: relative;
+    max-width: 400px;
+    right: 1000px;
+    top: -30px;
+    height: 230px; 
+    left:20px;
+    object-fit: cover; 
+}
+.servicos-texto{
+    width: 50%;
+}
+.servicos-texto h2{
+    padding: 1.2rem 0;
+}
+.servicos-texto .sevicos-btn button{
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(to right, rgb(4, 83, 255),rgb(7, 108, 190));
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    color: #fff;
+}
+
+/******CONTATOS*******/
+#contatos{
+    padding: 40px 0;
+}
+.contatos{
+    max-width: 1000px;
+    background-color: #898b9148;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.contatos .wrap-1{
+    width: 250px;
+    margin-right: auto ;
+}
+.contatos img{
+    display: block;
+    width: 30px;
+    margin: 10px auto 10px auto;
+}
+
+/***RODAPE***/
+#rodape{
+    padding: 4%;
+    background-color: #182238;
+}
+.rodape-container{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.rodape-container .rodape-nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.rodape-nav a{
+    color: rgb(216, 216, 216);
+}
+
+/*MEDIA QUERIS*/
+
+@media screen and (max-width:580px) {
+    .appointment-box{
+        flex-direction: column;
+        gap:20px;
+    }
+}
+@media screen and (max-width:700px){
+    .servicos-container .servicos-wrap{
+        flex-direction: column;
+    }
+    .servicos-wrap:last-child{
+        margin-top: 40px;
+    }
+    .servicos-wrap:last-child .servicos-img{
+        order: 0;
+    }
+    .servicos-wrap:last-child .servicos-texto{
+        order: 1;
+    }
+
+    .servicos-container .servicos-wrap .servicos-img div{
+        width: 320px!important;
+        height: 200px!important;
+        margin:40px 0 0 -40px !important;
+    }
+    .servicos-container .servicos-wrap .servicos-img div img{
+        height: 200px!important;
+        max-width: 100%;
+    }
+    .servicos-container .servicos-wrap:last-child .servicos-img div{
+        margin:40px auto 0 auto;
+    }
+    
+    
+}
+@media screen and (max-width:768px) {
+    .cabecalho-wrap{
+        
+        flex-direction: column;
+        align-items:center;
+        justify-content: inherit;
+        gap: 1.2em;
+    }
+}
+@media screen and (max-width:830px) {
+
+    /******INFORMAÇÂO******/
+    .info-container{flex-wrap: wrap;}
+    .info-wrap{flex:1 250px;}
+    .info-img{margin: 0 auto;}
+
+    /******ESPECIALIDADE******/
+    .especialidade-container{flex-wrap: wrap;}
+    .especialidade-wrap{margin: 0 auto;}
+    .especialidade-wrap img{max-width: 300px;}
+
+    /********VACINAÇÂO*********/
+    .vacina-container{flex-wrap: wrap;gap: 20px;}
+    .vacina-wrap{flex:1 250px; }
+    .vacina-img{margin: 0 auto;}
+
+    /*SERVIÇOS*/
+    .servicos-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:960px){
+    
+    .chamada-container{
+        display: inherit;
+        gap: inherit;
+    }
+    .titulo-chamada > div{
+        max-width: 100%;
+        padding: 2%;
+    }
+    .titulo-chamada > div h2{
+        font-size: 3em !important;
+        width: 100%;}
+
+    .titulo-chamada > div p{font-size: 1.2em;}
+    .titulo-chamada .link-video > .link-video-wrap{
+        margin-top: 0;
+    }
+    .bg-chamada{display: none;}
+
+    /*APPOINTMENT*/
+    .appointment{
+        margin-top: inherit;
+        padding: 3% 4%;
+        position: inherit;
+    }
+    .appointment-text{margin-bottom: 1em;}
+    .appointment .appointment-box{width: 100%;}
+
+     /******INFORMAÇÂO******/
+    .informacao{
+        margin-top: 0em;
+    }
+
+    /*SERVICOS*/
+
+    .servicos-container .servicos-wrap .servicos-img div{
+        width: 270px;
+        height: 140px;
+    }
+    .servicos-container .servicos-wrap .servicos-img div img{
+        height: 150px;
+    }
+    
+
+}
+@media screen and (max-width:1000px) {
+    .titulo-chamada > div h2{font-size: 2em;}
+}
+
+@media screen and (max-width:1040px) {
+
+     /******CHAMADA******/
+    .bg-chamada div img{
+        max-width: 550px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:1180px) {
+
+    /******CHAMADA******/
+    .bg-chamada div img{
+        max-width: 600px;
+        object-fit: cover;
+    }
+}
+
